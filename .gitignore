@@ -4,3 +4,4 @@
 mvnw
 mvnw.cmd
 .DS_Store
+/samples/echobot/target/
