@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.switchapi.chat.bot.api.v1.samples.echobot;
 
-import com.switchapi.chat.bot.api.v1.BotBase;
-import com.switchapi.chat.bot.api.v1.IBotContext;
-import com.switchapi.chat.bot.api.v1.model.BotCommand;
-import com.switchapi.chat.bot.api.v1.model.Message;
+import com.switchapi.chat.bot.api.v1.*;
+import com.switchapi.chat.bot.api.v1.model.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +12,7 @@ import java.util.List;
 public class EchoBot extends BotBase {
 
     @Override
-    public void invoke(IBotContext ibc) {
+    public void invoke(IBotContext ctx) {
         BotRequest req = ctx.getRequest();
 
         if (req.hasMessage()) {
