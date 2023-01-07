@@ -1,1 +1,1 @@
-# Switch BOT Library Version 1
+# Switch BOTS Library Version 1
