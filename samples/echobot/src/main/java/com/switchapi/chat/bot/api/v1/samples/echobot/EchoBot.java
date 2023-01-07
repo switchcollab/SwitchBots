@@ -11,6 +11,8 @@ import java.util.List;
  */
 public class EchoBot extends BotBase {
 
+    
+
     @Override
     public void invoke(IBotContext ctx) {
         BotRequest req = ctx.getRequest();
