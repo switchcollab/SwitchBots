@@ -3,10 +3,18 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.switchapi</groupId>
-    <artifactId>chat-bot-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>chat-bot-api</name>
+
+    <parent>
+        <artifactId>switch-main</artifactId>
+        <groupId>com.switchcomm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.switchcomm</groupId>
+    <artifactId>switch-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>switch-api</name>
     <description>Community Chat Bot Application</description>
     <url>https://github.com/switchcollab/SwitchBots</url>
     <properties>
@@ -70,7 +78,8 @@
                                     signing 
 										failed: Inappropriate ioctl for device -->
                                     <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
+                                        <arg>
+                                            --pinentry-mode</arg>
                                         <arg>loopback</arg>
                                     </gpgArguments>
                                 </configuration>
